@@ -1,68 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Echo's Food App</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Echo Food App</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
     <div class="overlay" id="overlay">
-        <h3> Searching now ...</h3>
+      <h3>Searching now ...</h3>
     </div>
     <div class="hero-bg">
-        <section class="top">
-            <header>
-                <a href="#">yummy.eats</a>
-            </header>
+      <section class="top">
+        <header>
+          <a href="#">yummy.eats</a>
+        </header>
 
-            <h1><span> THE HEALTHY </span>Eating Experience</h1>
+        <h1><span> THE HEALTHY </span>Eating Experience</h1>
 
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab non nam praesentium odio esse dolore suscipit asperiores voluptatum molestiae! Maxime.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab non nam
+          praesentium odio esse dolore suscipit asperiores voluptatum molestiae!
+          Maxime.
+        </p>
 
-           <div class="form-container">
-               <form action="#">
-                   <div class="form-left">
-                        <label for="city">Enter your City:</label>
+        <div class="form-container">
+          <form action="#">
+            <div class="form-left">
+              <label for="city">Enter your City:</label>
 
-                        <input type="text" name="city" id="city">
+              <input type="text" name="city" id="city" />
 
-                        <p>Example: "San Diego"</p>
-                    </div>
-                     <input type="button" value="Find Food Now" id="cta-btn">
-
-               </form>
-           </div>
-
-        </section>
+              <p>Example: "San Diego"</p>
+            </div>
+            <input type="button" value="Find Food Now" id="cta-btn" />
+          </form>
+        </div>
+      </section>
     </div>
 
     <section class="authentic">
+      <div class="right-col">
+        <h2>AUTHENTIC.WHOLESOME.</h2>
 
-        <div class="right-col">
-            
-            <h2>AUTHENTIC.WHOLESOME.</h2>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non reiciendis cum totam architecto ratione minima magnam officiis quas error in.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non reiciendis cum totam architecto ratione minima magnam officiis quas error in.</p>
-        
-        </div>
-        <img src="food.jpeg" alt="Food in bowl">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
+          reiciendis cum totam architecto ratione minima magnam officiis quas
+          error in.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
+          reiciendis cum totam architecto ratione minima magnam officiis quas
+          error in.
+        </p>
+      </div>
+      <img src="food.jpeg" alt="Food in bowl" />
     </section>
 
     <script>
+      let btn = document.getElementById("cta-btn");
+      let overlay = document.getElementById("overlay");
 
-        let btn = document.getElementById('cta-btn');
-        let overlay = document.getElementById('overlay');
-
-
-        btn.addEventListener('click', () => {
-            overlay.style.display = 'grid';
-            overlay.classList.add('animate-overlay')
-        })
-
+      btn.addEventListener("click", () => {
+        overlay.style.display = "grid";
+        overlay.classList.add("animate-overlay");
+      });
     </script>
-
-</body>
+  </body>
 </html>
